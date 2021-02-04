@@ -23,7 +23,7 @@ const ignorePatternsSubtrees = ignorePatterns
   .concat(ignorePatterns.map(pat => path.join(pat, '**/*')))
   .map(p => p.replace(/^\//, ''));
 
-const solcOutput = readJSON('cache/solc-output.json');
+const solcOutput = readJSON('cache/solidity-files-cache.json');
 
 const artifactsDir = 'build/contracts';
 
